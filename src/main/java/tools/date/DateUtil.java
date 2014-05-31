@@ -1,5 +1,5 @@
 package tools.date;
-
+package  abc_ddd
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -49,7 +49,7 @@ public class DateUtil
 
     /**
      * 不推荐原因:方法名太长 2008-09-13 zengxr 增加获取当前时间的方法，统一使用该接口方便以后转换实现方式
-     * 
+     *
      * @return // * @deprecated use nowDate() public static Date currentDate() { return nowDate(); }
      */
 
@@ -60,7 +60,7 @@ public class DateUtil
 
     /**
      * 不推荐原因:方法名含糊
-     * 
+     *
      * @param date
      * @param format
      * @return //* @deprecated use toString public static String formatDate(Date date, String format) { return toString(date,
@@ -69,7 +69,7 @@ public class DateUtil
 
     /**
      * 不推荐原因:方法名功能含糊不清 根据日期模式，把字符串型得日期转换程JAVA的日期
-     * 
+     *
      * @param dateStr 日期
      * @param format 模式
      * @return java型的日期 //* @deprecated use toDate public static Date getFormatDate(String dateStr, String format) throws
@@ -78,7 +78,7 @@ public class DateUtil
 
     /**
      * 默认使用比较常用的YYYYMMDDHHMMSS模式来转换日期
-     * 
+     *
      * @return
      * @throws IMSException 2012-10-22 zengxr cache the format template and default expire date // * @deprecated use toString
      *             public static String getFormatDate(Date date, String formatStr) throws IMSException { return toString(date,
@@ -118,7 +118,7 @@ public class DateUtil
 
     /**
      * 从缓存中取 SimpleDateFormat
-     * 
+     *
      * @param formatStr
      * @return
      */
@@ -250,7 +250,7 @@ public class DateUtil
 
     /**
      * 不推荐原因：方法名表达含义不明确 默认使用比较常用的YYYYMMDDHHMMSS模式来转换日期
-     * 
+     *
      * @param dateStr
      * @return
      * @throws IMSException //* @deprecated use toDate public static Date getFormatDate(String dateStr) throws IMSException {
@@ -258,7 +258,7 @@ public class DateUtil
      */
     /**
      * 不推荐原因：方法名表达含义不明确 对输入的日期字符串进行格式化.
-     * 
+     *
      * @param strDate 需要进行格式化的日期，格式为前面定义的 DATE_FORMAT_YYYYMMDDHHMMSS
      * @return 经过格式化后的字符串
      * @throws IMSException // * @deprecated use toDate public static Date getFormattedDate(String strDate) throws IMSException {
@@ -266,7 +266,7 @@ public class DateUtil
      */
     /**
      * 不推荐原因：方法名表达含义不明确,有复合操作 对输入的日期字符串进行格式化.
-     * 
+     *
      * @param strDate 需要进行格式化的日期，格式为前面定义的 DATE_FORMAT_YYYYMMDDHHMMSS
      * @param strFormatTo 指定采用何种格式进行格式化操作
      * @return 经过格式化后的字符串 // * @deprecated public static String getFormattedDate(String strDate, String strFormatTo) { Date d =
@@ -355,7 +355,7 @@ public class DateUtil
 
     /**
      * 计算两日期的大小
-     * 
+     *
      * @param startDate
      * @param endDate
      * @return 如果startDate 比endDate 小，返回true，否则返回false
@@ -387,7 +387,7 @@ public class DateUtil
 
     /**
      * date转timestamp luojb 2012-3-26
-     * 
+     *
      * @param date
      * @return
      */
@@ -398,7 +398,7 @@ public class DateUtil
 
     /**
      * 获取两个时间之间的秒数差
-     * 
+     *
      * @param d1
      * @param d2
      * @return 返回正值
@@ -413,7 +413,7 @@ public class DateUtil
 
     /**
      * 把Date转成mdb要的秒数
-     * 
+     *
      * @author wuyj 2013-3-29
      * @param validDate
      * @return
